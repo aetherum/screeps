@@ -27,11 +27,11 @@ var roleHarvester = {
 
                 if(creep.memory.upgrading && creep.carry.energy == 0) {
                     creep.memory.upgrading = false;
-                    creep.say('🔄 harvest');
+                    creep.say('harvest');
                 }
                 if(!creep.memory.upgrading && creep.carry.energy == creep.carryCapacity) {
                     creep.memory.upgrading = true;
-                    creep.say('⚡ upgrade');
+                    creep.say('upgrade');
                 }
 
                 if(creep.memory.upgrading) {
