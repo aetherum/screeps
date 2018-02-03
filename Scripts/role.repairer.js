@@ -5,11 +5,11 @@ var roleRepairer = {
 
         if(creep.memory.repairing && creep.carry.energy == 0) {
             creep.memory.repairing = false;
-            creep.say('🔄 harvest');
+            creep.say('harvest');
         }
         if(!creep.memory.repairing && creep.carry.energy == creep.carryCapacity) {
             creep.memory.repairing = true;
-            creep.say('🚧 repair');
+            creep.say('repair');
         }
 
         if(creep.memory.repairing) {
@@ -54,11 +54,11 @@ var roleRepairer = {
 
                         if(creep.memory.upgrading && creep.carry.energy == 0) {
                             creep.memory.upgrading = false;
-                            creep.say('🔄 harvest');
+                            creep.say('harvest');
                         }
                         if(!creep.memory.upgrading && creep.carry.energy == creep.carryCapacity) {
                             creep.memory.upgrading = true;
-                            creep.say('⚡ upgrade');
+                            creep.say('upgrade');
                         }
 
                         if(creep.memory.upgrading) {
