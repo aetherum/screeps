@@ -202,7 +202,7 @@ module.exports.loop = function () {
     if (Game.spawns['Aiur'].spawning){
         var spawningCreep = Game.creeps[Game.spawns['Aiur'].spawning.name];
         Game.spawns['Aiur'].room.visual.text(
-            '🛠️' + spawningCreep.memory.role,
+            spawningCreep.memory.role,
             Game.spawns['Aiur'].pos.x + 1,
             Game.spawns['Aiur'].pos.y,
             { align: 'left', opacity: 0.8
