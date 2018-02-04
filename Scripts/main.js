@@ -8,7 +8,7 @@ module.exports.loop = function () {
     for (var name in Memory.creeps){
         if(!Game.creeps[name]){
             delete Memory.creeps[name];
-            console.log('Cleaning non-existing creep memory: ', name);
+            console.log('Cleaning non-existing creep memorytesttestset: ', name);
         }
     }
 
