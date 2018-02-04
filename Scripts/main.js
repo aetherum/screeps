@@ -8,7 +8,7 @@ module.exports.loop = function () {
     for (var name in Memory.creeps){
         if(!Game.creeps[name]){
             delete Memory.creeps[name];
-            console.log('Cleaning non-existing creep memory: ', name);
+            console.log('Cleaning non-existing creep: ', name);
         }
     }
 
@@ -180,7 +180,7 @@ module.exports.loop = function () {
     }
 
 
-    if (Game.spawns['Aiur'].room.controller.level == 3){
+    if (Game.spawns['Aiur'].room.controller.level >= 3){
 
 
 
@@ -196,6 +196,11 @@ module.exports.loop = function () {
         if (builders.length < 2){
             var newBuild05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'builder'});
             console.log('Spawning new builder: ' + newBuild05);
+        }
+
+        if (repairers.length < 2){
+            var newRep10 = Game.spawns['Aiur'].createCreep( [WORK, CARRY, CARRY, MOVE, MOVE], undefined, {role: 'repairer'});
+            console.log('Spawning new repo: ' + newRep10);
         }
     }
 
