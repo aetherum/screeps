@@ -22,7 +22,7 @@ module.exports.loop = function () {
     console.log('Builders: ' + builders.length);
 
     var repairers = _.filter(Game.creeps, (creep) => creep.memory.role == 'repairer');
-    console.log('Repairs TEST: ' + repairers.length);
+    console.log('Repairs: ' + repairers.length);
 
     var source = Game.spawns['Aiur'].room.find(FIND_SOURCES);
 
