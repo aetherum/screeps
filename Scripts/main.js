@@ -186,12 +186,12 @@ module.exports.loop = function () {
 
 
         if (harvesters.length < 2){
-            var newHarv05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'harvester'} );
+            var newHarv05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'harvester'} );
             console.log('Spawning new harvester: ' + newHarv05);
         }
 
         if (upgraders.length < 3){
-            var newUpgr05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'upgrader'} );
+            var newUpgr05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'upgrader'} );
             console.log('Spawning new upgrader: ' + newUpgr05);
         }
         if (builders.length < 2){
