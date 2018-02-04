@@ -215,7 +215,7 @@ module.exports.loop = function () {
     }
 
 
-    var towers = Game.spawns['Aiur'].room.find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_EXTENSION }});
+    var towers = Game.spawns['Aiur'].room.find(FIND_MY_STRUCTURES, {filter: {structureType: STRUCTURE_TOWER }});
     if(towers.length){
 
             var hostiles = Game.spawns['Aiur'].room.find(FIND_HOSTILE_CREEPS);
