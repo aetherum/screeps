@@ -226,7 +226,7 @@ module.exports.loop = function () {
             }
             else{
 
-                var damagedBuilds = Game.spawns['Aiur'].room.find(FIND_MY_STRUCTURES, {filter: object => object.hits < object.hitsMax} );
+                var damagedBuilds = Game.spawns['Aiur'].room.find(FIND_STRUCTURES, {filter: object => object.hits < object.hitsMax} );
                 if(damagedBuilds.length){
                     damagedBuilds.sort( (a,b) => a.hits - b.hits);
                     towers.forEach(tower => tower.repair(damagedBuilds[0]));
