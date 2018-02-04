@@ -134,7 +134,7 @@ module.exports.loop = function () {
                 console.log('Spawning new builder: ' + newBuild04);
             }
 
-            if (repairers.length < 2){
+            if (repairers.length < 3){
                 var newRep04 = Game.spawns['Aiur'].createCreep( [WORK, CARRY, MOVE], undefined, {role: 'repairer'});
                 console.log('Spawning new repo: ' + newRep04);
             }
