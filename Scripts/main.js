@@ -125,7 +125,7 @@ module.exports.loop = function () {
                 console.log('Spawning new harvester: ' + newHarv04);
             }
 
-            if (upgraders.length < 3){
+            if (upgraders.length < 4){
                 var newUpgr04 = Game.spawns['Aiur'].createCreep( [WORK, WORK, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'upgrader'} );
                 console.log('Spawning new upgrader: ' + newUpgr04);
             }
