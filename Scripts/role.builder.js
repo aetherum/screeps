@@ -26,7 +26,7 @@ var roleBuilder = {
                         filter: (structure) => {
                         return (structure.structureType == STRUCTURE_EXTENSION ||
                     structure.structureType == STRUCTURE_SPAWN ||
-                    structure.structureType == STRUCTURE_TOWER) && structure.energy < 1/2 * structure.energyCapacity;
+                    structure.structureType == STRUCTURE_TOWER) && structure.energy < 2/3 * structure.energyCapacity;
                 }
                 });
 
