@@ -181,7 +181,7 @@ module.exports.loop = function () {
     }
 
 
-    if (Game.spawns['Aiur'].room.controller.level >= 3){
+    if (Game.spawns['Aiur'].room.controller.level == 3){
 
 
 
@@ -192,6 +192,30 @@ module.exports.loop = function () {
 
         if (upgraders.length < 4){
             var newUpgr05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'upgrader'} );
+            console.log('Spawning new upgrader: ' + newUpgr05);
+        }
+        if (builders.length < 2){
+            var newBuild05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'builder'});
+            console.log('Spawning new builder: ' + newBuild05);
+        }
+
+        if (repairers.length < 2){
+            var newRep10 = Game.spawns['Aiur'].createCreep( [WORK, CARRY, CARRY, MOVE, MOVE], undefined, {role: 'repairer'});
+            console.log('Spawning new repo: ' + newRep10);
+        }
+    }
+    
+       if (Game.spawns['Aiur'].room.controller.level >= 4){
+
+
+
+        if (harvesters.length < 2){
+            var newHarv05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'harvester'} );
+            console.log('Spawning new harvester: ' + newHarv05);
+        }
+
+        if (upgraders.length < 4){
+            var newUpgr05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'upgrader'} );
             console.log('Spawning new upgrader: ' + newUpgr05);
         }
         if (builders.length < 2){
