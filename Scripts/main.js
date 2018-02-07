@@ -215,7 +215,7 @@ module.exports.loop = function () {
         }
 
         if (upgraders.length < 5){
-            var newUpgr05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE], undefined, {role: 'upgrader'} );
+            var newUpgr05 = Game.spawns['Aiur'].createCreep( [WORK, WORK, WORK, WORK, CARRY, CARRY, CARRY, MOVE, MOVE, MOVE, MOVE], undefined, {role: 'upgrader'} );
             console.log('Spawning new upgrader: ' + newUpgr05);
         }
         if (builders.length < 2){
