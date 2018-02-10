@@ -29,7 +29,7 @@ module.exports.loop = function () {
 
     if(source[0].energy <= 400 || source[1].energy <= 400 || Game.spawns['Aiur'].room.controller.ticksToDowngrade < 4000 || harvesters.length == 0 || upgraders.length == 0){
 
-        Game.notify('Zasilanie awaryjne' + Game.spawns['Aiur'].room.name);
+        //Game.notify('Zasilanie awaryjne' + Game.spawns['Aiur'].room.name);
 
         if (harvesters.length < 2){
             var newHarv00 = Game.spawns['Aiur'].createCreep( [WORK, CARRY, MOVE], undefined, {role: 'harvester'} );
